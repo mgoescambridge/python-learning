@@ -27,7 +27,22 @@ print(Word[4])
 
 Word = "Hello"
 
+# Let n = indexes, s = start, e = end, and z = number of step where [s, e, z]
+# Mathematically defined as:
 
-# Reverse Slicing Method (Using negative step)
-print(Word[5::-1])
+# s ≤ n < e for all z > 0 | Example: [0:5:1]
+
+print(Word[0:5:1]) # --> Output = 'Hello' as it iterate from [0]{'H'} -> [5]{''}, with 1 step add per checking
+
+print(Word[1:5:1])
+
+print(Word[1:4:1])
+
+
+# s ≥ n > e for all z < 0 | Example [5:0:-1] # Reversing String Method
+
+print(Word[5:0:-1])
+print(Word[4:1:-1])
+print(Word[5::-2])
+
 
